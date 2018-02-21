@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>EDU CONTENT LOCK</title>
+    <title>OERlabs edurallye</title>
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template -->
@@ -16,13 +16,11 @@
     <!-- Custom styles for this template -->
     <link href="css/landing-page.min.css" rel="stylesheet">
     <link href="css/bootstrap-pincode-input.css" rel="stylesheet">
-
     <style type="text/css">
-      header.masthead{
-        min-height:500px;
+    header.masthead {
+        min-height: 500px;
         background: url("img/lock-1673604_1920.jpg") no-repeat center center !important;
-      }
-
+    }
     </style>
 </head>
 
@@ -30,7 +28,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-light bg-light static-top">
         <div class="container">
-            <a class="navbar-brand" href="#">EDU ESCAPE UNLOCK</a>
+            <a class="navbar-brand" href="#">OERlabs edurallye</a>
             <!-- <a class="btn btn-primary" href="#">Sign In</a> -->
         </div>
     </nav>
@@ -39,9 +37,6 @@
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
-            <div class="col-xl-9 mx-auto">
-            <h3 class="mb-5 unlock-error-message" style="display:none;">Sorry, that code does not exist.</h3>
-            </div>
                 <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
                     <input type="text" id="pincode-input1">
                     <!-- <form>
@@ -55,6 +50,11 @@
               </div>
             </form> -->
                 </div>
+                <div class="col-xl-9 mx-auto">
+                    <div class="unlock-error-message" style="display:none;">
+                        <h3>Sorry, that code does not exist.</h3></div>
+                    <div class="unlock-success-message"></div>
+                </div>
             </div>
         </div>
     </header>
@@ -64,22 +64,20 @@
             <div class="row">
                 <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
                     <p>Does not work? Use classic input:</p>
-
                     <form>
-              <div class="form-row">
-                <div class="col-12 col-md-9 mb-2 mb-md-0">
-                  <input type="email" class="form-control form-control-lg" placeholder="Enter the code">
-                </div>
-                <div class="col-12 col-md-3">
-                  <button type="submit" id="open-the-lock" class="btn btn-block btn-lg btn-primary">Öffnen</button>
-                </div>
-              </div>
-            </form>
+                        <div class="form-row">
+                            <div class="col-12 col-md-9 mb-2 mb-md-0">
+                                <input type="email" class="form-control form-control-lg" placeholder="Enter the code">
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <button type="submit" id="open-the-lock" class="btn btn-block btn-lg btn-primary">Open</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
-    
     <div class="modal" tabindex="-1" role="dialog" id="redirect-modal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
