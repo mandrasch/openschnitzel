@@ -49,7 +49,7 @@ $(function() {
         },
         change: function(input, value, inputnumber) {
             $(".unlock-error-message").hide();
-            $("unlock-successful-message").hide();
+            $(".unlock-success-message").hide();
 
          }
     });
