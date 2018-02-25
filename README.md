@@ -4,11 +4,15 @@ Redirect PIN codes to URLs, just a simple alternative to QR code rallyes
 ## Why?
 
 QR rallyes are great, but multiple QR codes are hard to maintain: Which QR code was which one? For humans QR codes look mostly the same, at least for me. Furthermore it is hard to change QR code contents afterwards, because you will need a professional qr code tool. 
-OpenSchnitzel (in germany „Schnitzel-Jagd“ means treasure hunt/rallye) wants to provide a simple alternative which you can host on github.com for free. 
+OpenSchnitzel wants to provide a simple alternative which you can host on github.com for free. 
+
+[In germany „Schnitzel-Jagd“ means treasure hunt/rallye]
 
 ## Demo
 https://programmieraffe.github.io/openschnitzel/
 Use code 1234
+
+Example for a worksheet using OpenSchnitzel: https://goo.gl/unzo9K
 
 ### Use and edit it online via your webbrowser
 1. Download this repository
@@ -40,7 +44,7 @@ To test and edit it locally you will need a local webserver application like XAM
 You can make YOURUSERNAME.github.io/YOURREPOSITORYNAME/ accessible via QR code if you want, but you don't have to handle 20 or more QR codes anymore. 
 
 ### Pedagogical approaches
-I can't predict how people will use it. My suggestions would be edu rallyes or maybe Breakout Edu sessions (escape room method, see https://www.breakoutedu.com/)? Please let me know if you use it! :-)
+I can't predict how people will use it. My suggestions would be edu rallyes or maybe Breakout Edu sessions (escape room method, see https://www.breakoutedu.com/). Please let me know if and how you use it! :-)
 
 
 ### Beware - clever students! ;-)
