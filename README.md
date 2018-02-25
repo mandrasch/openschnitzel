@@ -6,6 +6,10 @@ Redirect PIN code numbers to URLs, simple alternative to QR-codes rallyes
 QR rallyes are great, but multiple QR codes are hard to maintain: Which QR code was which one? For humans QR codes look mostly the same, at least for me. Furthermore it is hard to change QR code contents afterwards, because you will need a professional qr code tool. 
 OpenSchnitzel (in germany „Schnitzel-Jagd“ means treasure hunt/rallye) wants to provide a simple alternative which you can host on github.com for free. 
 
+## Demo
+https://programmieraffe.github.io/openschnitzel/
+Use code 1234
+
 ### Use and edit it online via your webbrowser
 1. Download this repository
 2. Unzip it locally
