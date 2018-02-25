@@ -19,7 +19,7 @@ Example for a worksheet using OpenSchnitzel: https://goo.gl/unzo9K
 2. Unzip it locally
 3. Create your own new repository on github.com
 4. Upload the unzipped content of the openschnitzel-directory to your new repository
-5. Enable web application your repository settings
+5. Enable Github Pages feature in your repository settings
 6. Check out YOURUSERNAME.github.io/YOURREPOSITORYNAME/ to see if it works
 7. Edit the codes.json file to add your pin numbers and URLs
 8. (Optional) Check if your JSON file is correct by pasting it to: https://jsonlint.com/
@@ -32,7 +32,7 @@ Example for a worksheet using OpenSchnitzel: https://goo.gl/unzo9K
 4. Unzip it locally
 5. Copy the unzipped content of the openschnitzel-directory to your local repository directory
 6. Commit the changes, push them to github
-7. Enable web application your repository settings
+7. Enable Github Pages feature in your repository settings
 8. Check out YOURUSERNAME.github.io/YOURREPOSITORYNAME/ to see if it works
 9. Edit the codes.json file to add your pin numbers and URLs
 10. (Optional) Check if your JSON file is correct by pasting it to: https://jsonlint.com/
