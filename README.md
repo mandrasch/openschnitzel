@@ -36,7 +36,14 @@ Use code 1234
 12. Teach & enjoy!
 To test and edit it locally you will need a local webserver application like XAMPP, MAMP, etc. Otherwise in most browsers loading via AJAX will not work because of security restrictions.
 
-### Beware - clever students! 
+### Use it on a worksheet
+You can make YOURUSERNAME.github.io/YOURREPOSITORYNAME/ accessible via QR code if you want, but you don't have to handle 20 or more QR codes anymore. 
+
+### Pedagogical approaches
+I can't predict how people will use it. My suggestions would be edu rallyes or maybe Breakout Edu sessions (escape room method, see https://www.breakoutedu.com/)? Please let me know if you use it! :-)
+
+
+### Beware - clever students! ;-)
 Right now computer-experienced students can just retrieve the codes.json file and see all the URLs. In near future I'll provide a php solution as well (you'll need a webserver/webspace for that) where you can't just retrieve the JSON file so easily. 
 
 ### Configuration (coming soon)
