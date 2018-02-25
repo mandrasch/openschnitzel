@@ -1,5 +1,5 @@
 # OpenSchnitzel
-Redirect PIN code numbers to URLs, simple alternative to QR-codes rallyes
+Redirect PIN codes to URLs, just a simple alternative to QR code rallyes
 
 ## Why?
 
