@@ -1,22 +1,23 @@
 // console.log fallback
 if (typeof console === 'undefined') {
-  window.console = {
-    log: function() {}
-  };
+    window.console = {
+        log: function() {}
+    };
 }
 
-
+// configuration
 var AJAX_UNLOCK_URL = 'codes.json';
+var DIGITS = 4; // how many numbers?
 
 // 2DO: NOT IMPLEMENTED YET!
 // uncomment following line for PHP-alternative (more secure)
 // AJAX_UNLOCK_URL = 'try-to-unlock.php';
 // important: rename codes.json file to other filename and change it inside of try-to-unlock.php as well
 
-
-
 var sendUnlockCode = function(code_input_from_user) {
     $(".unlock-error-message").hide();
+    $(".unlock-success-message").hide();
+
     $.getJSON(AJAX_UNLOCK_URL, function(data) {
 
         if (data.codes.hasOwnProperty(code_input_from_user)) {
@@ -37,8 +38,6 @@ var sendUnlockCode = function(code_input_from_user) {
         } else {
             // 2DO show error, code does not exist
             $(".unlock-error-message").fadeIn();
-
-
         }
     });
 
@@ -48,20 +47,24 @@ var sendUnlockCode = function(code_input_from_user) {
 $(function() {
 
     $('#pincode-input1').pincodeInput({
-        hidedigits: true,
-        digits: 4,
+        hidedigits: false,
+        inputs: DIGITS,
         complete: function(value, e, errorElement) {
             sendUnlockCode(value);
         },
         change: function(input, value, inputnumber) {
             $(".unlock-error-message").hide();
             $(".unlock-success-message").hide();
-
-         }
+        }
     });
 
     $('#pincode-input1').pincodeInput().data('plugin_pincodeInput').focus();
 
+    // classic method
+    $("#open-the-lock-classic").click(function(e) {
+        e.preventDefault();
+        sendUnlockCode($("#classic-code").val());
+    })
 
 
 }); // eo jQuery

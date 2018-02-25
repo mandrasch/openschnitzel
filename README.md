@@ -49,3 +49,6 @@ Right now computer-experienced students can just retrieve the codes.json file an
 ### Configuration (coming soon)
 - 
 
+### Credits - thanks!
+- https://github.com/fkranenburg/bootstrap-pincode-input (MIT)
+- https://startbootstrap.com/template-overviews/landing-page/ (Apache 2 License)

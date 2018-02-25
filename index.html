@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="description" content="An open „Schnitzeljagd“">
     <meta name="author" content="">
     <title>OpenSchnitzel</title>
     <!-- Bootstrap core CSS -->
@@ -38,17 +38,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                    <input type="text" id="pincode-input1">
-                    <!-- <form>
-              <div class="form-row">
-                <div class="col-12 col-md-9 mb-2 mb-md-0">
-                  <input type="email" class="form-control form-control-lg" placeholder="Enter the code">
-                </div>
-                <div class="col-12 col-md-3">
-                  <button type="submit" id="open-the-lock" class="btn btn-block btn-lg btn-primary">Öffnen</button>
-                </div>
-              </div>
-            </form> -->
+                    <form autocomplete="off">
+                        <input type="text" id="pincode-input1">
+                    </form>
                 </div>
                 <div class="col-xl-9 mx-auto">
                     <div class="unlock-error-message" style="display:none;">
@@ -64,77 +56,30 @@
             <div class="row">
                 <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
                     <p>Does not work? Use classic input:</p>
-                    <form>
+                    <form autocomplete="off">
                         <div class="form-row">
                             <div class="col-12 col-md-9 mb-2 mb-md-0">
-                                <input type="email" class="form-control form-control-lg" placeholder="Enter the code">
+                                <input type="text" class="form-control form-control-lg" placeholder="Enter the code" id="classic-code">
                             </div>
                             <div class="col-12 col-md-3">
-                                <button type="submit" id="open-the-lock" class="btn btn-block btn-lg btn-primary">Open</button>
+                                <button type="submit" id="open-the-lock-classic" class="btn btn-block btn-lg btn-primary">Try to open</button>
                             </div>
                         </div>
                     </form>
+                    <div class="unlock-error-message" style="display:none;">
+                        <h3>Sorry, that code does not exist.</h3></div>
+                    <div class="unlock-success-message"></div>
+                </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="modal" tabindex="-1" role="dialog" id="redirect-modal">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Unlocked!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Modal body text goes here.</p>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Footer -->
     <footer class="footer bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-                    <ul class="list-inline mb-2">
-                        <li class="list-inline-item">
-                            <a href="#">About</a>
-                        </li>
-                        <li class="list-inline-item">&sdot;</li>
-                        <li class="list-inline-item">
-                            <a href="#">Contact</a>
-                        </li>
-                        <li class="list-inline-item">&sdot;</li>
-                        <li class="list-inline-item">
-                            <a href="#">Terms of Use</a>
-                        </li>
-                        <li class="list-inline-item">&sdot;</li>
-                        <li class="list-inline-item">
-                            <a href="#">Privacy Policy</a>
-                        </li>
-                    </ul>
+                <div class="col-lg-12 col-12 text-center">
                     <p class="text-muted small mb-4 mb-lg-0">Made with <a href="github.com/programmieraffe/openschnitzel" target="_blank">OpenSchnitzel</a> | Photo: <a href="https://pixabay.com/de/sperre-gesperrt-sichern-sicherheit-1673604/">Joffi (Pixabay/CC0)</a></p>
-                </div>
-                <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item mr-3">
-                            <a href="#">
-                  <i class="fa fa-facebook fa-2x fa-fw"></i>
-                </a>
-                        </li>
-                        <li class="list-inline-item mr-3">
-                            <a href="#">
-                  <i class="fa fa-twitter fa-2x fa-fw"></i>
-                </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                  <i class="fa fa-instagram fa-2x fa-fw"></i>
-                </a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -143,7 +88,6 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-pincode-input.js"></script>
-    <script type="text/javascript" src="js/edu_escape_lock.js"></script>
+    <script type="text/javascript" src="js/openschnitzel.js"></script>
 </body>
-
 </html>
