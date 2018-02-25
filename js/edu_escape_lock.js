@@ -1,4 +1,10 @@
-// 2DO: console.log workaround
+// console.log fallback
+if (typeof console === 'undefined') {
+  window.console = {
+    log: function() {}
+  };
+}
+
 
 var AJAX_UNLOCK_URL = 'codes.json';
 
@@ -15,7 +21,7 @@ var sendUnlockCode = function(code_input_from_user) {
 
         if (data.codes.hasOwnProperty(code_input_from_user)) {
             var redirect_url = data.codes[code_input_from_user];
-            var redirect_message = '<p><h3>Code unlocked!</h3> <a class="btn btn-primary" href="' + redirect_url + '">Open</a></p>';
+            var redirect_message = '<p><h3>Code unlocked!</h3> <a class="btn btn-primary" href="' + redirect_url + '" target="_blank">Open</a></p>';
 
             //$("#redirect-modal .modal-body").html(redirect_message);
             //$("#redirect-modal").modal();
